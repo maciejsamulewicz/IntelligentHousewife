@@ -1,23 +1,23 @@
 package stock;
 
-public enum DairyType {
+public enum BreadType {
 
-	CHEESE("Ser zolty"), 
-	COTTAGE_CHEESE("Ser bialy"), 
-	MILK("Mleko"), 
-	CREAM("Smietana");
-
+	BREAD("Chleb"),
+	ROLL("Bu³ka"),
+	BAGUETTE("Bagietka");
+	
 	private String description;
 	
-	DairyType(String description) {
-			this.description=description;
+	private BreadType(String description) {
+		
+		this.description=description;
 	
 	}
 
 	public String getDescription() {
 		return description;
 	}
-	
+
 	@Override
 	public String toString() {
 		
@@ -25,3 +25,5 @@ public enum DairyType {
 	}
 	
 }
+
+

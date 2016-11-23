@@ -2,40 +2,28 @@ package stock;
 
 public class Dairy extends Product {
 
-	private String type;
+	private DairyType type;
 
-	
-	public enum DairyType {
-
-		CHEESE("Ser zolty"), 
-		COTTAGE_CHEESE("Ser bialy"), 
-		MILK("Mleko"), 
-		CREAM("Smietana");
-
-		private String description;
-		
-		DairyType(String description) {
-				this.description=description;
-		
-		}
-
-		public String getDescription() {
-			return description;
-		}
-	}
-	public String getType() {
+	public DairyType getType() {
 		return type;
 	}
 
-	public void setType(String type) {
+	public void setType(DairyType type) {
 		this.type = type;
 	}
 
-	public Dairy(String name, String producer, String type, String dateOfPurchase, String dateOfExpiration) {
+	public Dairy(String name, String producer, DairyType typ, String dateOfPurchase, String dateOfExpiration) {
 		super(name, producer, dateOfPurchase, dateOfExpiration);
-		this.type = type;
+		this.type = typ;
 
 	}
 
+	@Override
+	public String toString() {
+		return "Nabia³:  typ: " + type + ", nazwa: " + getName() + ", producent: " + getProducer()
+				+ ", data zakupu: " + getDateOfPurchase() + ", data wa¿noœci: " + getDateOfExpiration();
+	}
 	
+	
+
 }

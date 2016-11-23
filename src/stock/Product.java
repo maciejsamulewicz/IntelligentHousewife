@@ -7,16 +7,15 @@ public class Product {
 	private String dateOfPurchase;
 	private String dateOfExpiration;
 
-	public Product(String name, String producer, String dateOfPurchase, String dateOfExpiration){
-		
+	public Product(String name, String producer, String dateOfPurchase, String dateOfExpiration) {
+
 		setName(name);
 		setProducer(producer);
 		setDateOfPurchase(dateOfPurchase);
 		setDateOfExpiration(dateOfExpiration);
-		
+
 	}
-	
-	
+
 	public String getName() {
 		return name;
 	}
@@ -48,7 +47,6 @@ public class Product {
 	public void setDateOfExpiration(String dateOfExpiration) {
 		this.dateOfExpiration = dateOfExpiration;
 	}
-
 
 	@Override
 	public int hashCode() {
