@@ -19,7 +19,45 @@ public class Bread extends Product {
 
 	@Override
 	public String toString() {
-		return "Pieczywo:  typ: " + typ + ", nazwa: " + getName() + ", producent: " + getProducer()
-				+ ", data zakupu: " + getDateOfPurchase() + ", data wa¿noœci: " + getDateOfExpiration();
+		return "Pieczywo:  typ: " + typ + ", nazwa: " + getName() + ", producent: " + getProducer() + ", data zakupu: "
+				+ getDateOfPurchase() + ", data wa¿noœci: " + getDateOfExpiration();
 	}
+
+	@Override
+	public void addProductToBaseState() {
+		System.out.println();
+		
+	}
+
+	@Override
+	public void addProductToStore() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addProductToShoppingList() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteProductFromBaseState() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteProductFromStore() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteProductFromShoppingList() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
 }

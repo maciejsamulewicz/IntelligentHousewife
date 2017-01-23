@@ -1,6 +1,6 @@
 package stock;
 
-public class Product {
+public abstract class Product {
 
 	private String name;
 	private String producer;
@@ -15,6 +15,20 @@ public class Product {
 		setDateOfExpiration(dateOfExpiration);
 
 	}
+
+	public abstract void addProductToBaseState();
+
+	public abstract void addProductToStore();
+
+	
+
+	public abstract void addProductToShoppingList();
+
+	public abstract void deleteProductFromBaseState();
+
+	public abstract void deleteProductFromStore();
+
+	public abstract void deleteProductFromShoppingList();
 
 	public String getName() {
 		return name;

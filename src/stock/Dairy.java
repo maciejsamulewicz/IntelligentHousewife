@@ -23,6 +23,42 @@ public class Dairy extends Product {
 		return "Nabia³:  typ: " + type + ", nazwa: " + getName() + ", producent: " + getProducer()
 				+ ", data zakupu: " + getDateOfPurchase() + ", data wa¿noœci: " + getDateOfExpiration();
 	}
+
+	@Override
+	public void addProductToBaseState() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addProductToStore() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addProductToShoppingList() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteProductFromBaseState() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteProductFromStore() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteProductFromShoppingList() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 

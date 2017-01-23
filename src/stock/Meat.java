@@ -1,6 +1,6 @@
 package stock;
 
-public class Meat extends Product {
+public class Meat extends Product implements Freezing{
 
 	private MeatType type;
 	private boolean frozen;
@@ -10,19 +10,7 @@ public class Meat extends Product {
 		super(name, producer, dateOfPurchase, dateOfExpiration);
 		this.type = type;
 	}
-	
-	public void addMeat(Meat meat){
-		
-		
-		if (frozen == true ) {
-			
-			//jeœli produkt jest zamro¿ony umieœæ go w zamra¿arce i nadaj termin wa¿noœci z metody
-			
-		}
-		
-	}
-	
-	
+
 	
 	public MeatType getType() {
 		return type;
@@ -46,6 +34,61 @@ public class Meat extends Product {
 
 	public void setSliced(boolean sliced) {
 		this.sliced = sliced;
+	}
+
+	
+	@Override
+	public void addProductToBaseState() {
+		if (frozen == true ) {
+			
+			//jeœli produkt jest zamro¿ony umieœæ go w zamra¿arce i nadaj termin wa¿noœci z metody
+			
+		}
+		
+	}
+
+	@Override
+	public void addProductToStore() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addProductToShoppingList() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteProductFromBaseState() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteProductFromStore() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteProductFromShoppingList() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void addProductToFreezer() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void deleteProductFromFreezer() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	
